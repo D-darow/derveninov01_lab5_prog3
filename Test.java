@@ -1,9 +1,14 @@
 public class Test {
 
    public static void main(String args[]){
-      bus my_bus = new bus(0, 0, 25);
-      my_bus.init_bus();
-      my_bus.add_passenger();
-      my_bus.print_bus();
+      bus[] bus_arr = new bus[2];
+      bus_arr[0] = new bus(1, 0, 25);
+      bus_arr[1] = new bus(2, 0, 30);
+      for (int i = 0; i < 2; i++) {
+      	bus_arr[i].init_bus();
+      }
+      for (int i = 0; i < 2; i++) {
+      	bus_arr[i].print_bus();
+      }
    }
 }
