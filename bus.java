@@ -10,28 +10,28 @@ public class bus {
 	private int sum; // Сумма заработанных денег
 
 	// Конструктор
-	public bus(int bus_num_in, int num_of_seats_in, 
-		int price_in) 
+	public bus(int bus_num, int num_of_seats, 
+		int price) 
 	{
-		bus_num = bus_num_in;
-		num_of_seats = num_of_seats_in;
-		price = price_in;
+		this.bus_num = bus_num;
+		this.num_of_seats = num_of_seats;
+		this.price = price;
 		sum = 0;
 		bus_engine = new engine();
 		bus_wheels = new wheels();
 		bus_driver = new driver();
 	}
 	// Установка номера автобуса
-	public void set_bus_num(int bus_num_in) {
-		bus_num = bus_num_in;
+	public void set_bus_num(int bus_num) {
+		this.bus_num = bus_num;
 	}
 	// Получение номера автобуса
 	public int get_bus_num() {
 		return bus_num;
 	}
 	// Установка цены проезда
-	public void set_price(int price_in) {
-		price = price_in;
+	public void set_price(int price) {
+		this.price = price;
 	}
 	// Получение цены проезда
 	public int get_price() {

@@ -12,30 +12,30 @@ public class driver {
 		phone_number = null;
 	}
 	// Конструктор
-	public driver(String name_in, String surname_in, String phone_number_in) {
-		name = name_in;
-		surname = surname_in;
-		phone_number = phone_number_in;
+	public driver(String name, String surname, String phone_number) {
+		this.name = name;
+		this.surname = surname;
+		this.phone_number = phone_number;
 	}
 	// Установка имени
-	public void set_name(String name_in) {
-		name = name_in;
+	public void set_name(String name) {
+		this.name = name;
 	}
 	// Получение имени
 	public String get_name() {
 		return name;
 	}
 	// Установка фамилии
-	public void set_surname(String surname_in) {
-		surname = surname_in;
+	public void set_surname(String surname) {
+		this.surname = surname;
 	}
 	// Получение фамилии
 	public String get_surname() {
 		return surname;
 	}
 	// Установка номера телефона
-	public void set_phone_number(String phone_number_in) {
-		phone_number = phone_number_in;
+	public void set_phone_number(String phone_number) {
+		this.phone_number = phone_number;
 	}
 	// Получение номера телефона
 	public String get_phone_number() {

@@ -12,30 +12,30 @@ public class engine {
 		num_of_cylinders = 2;
 	}
 	// Конструктор
-	public engine(int power, int fuel_in, int cylinders) {
-		hs_power = power;
-		fuel = fuel_in;
-		num_of_cylinders = cylinders;
+	public engine(int hs_power, int fuel, int num_of_cylinders) {
+		this.hs_power = hs_power;
+		this.fuel = fuel;
+		this.num_of_cylinders = num_of_cylinders;
 	}
 	// Установка лошадиных сил
-	public void set_hs_power(int hs_power_in) {
-		hs_power = hs_power_in;
+	public void set_hs_power(int hs_power) {
+		this.hs_power = hs_power;
 	}
 	// Получение лошадиных сил
 	public int get_hs_power() {
 		return hs_power;
 	}
 	// Установка рода топлива
-	public void set_fuel(int fuel_in) {
-		fuel = fuel_in;
+	public void set_fuel(int fuel) {
+		this.fuel = fuel;
 	}
 	// Получение рода топлива
 	public int get_fuel() {
 		return fuel;
 	}
 	// Установка количества цилиндров
-	public void set_num_of_cylinders(int num_of_cylinders_in) {
-		num_of_cylinders = num_of_cylinders_in;
+	public void set_num_of_cylinders(int num_of_cylinders) {
+		this.num_of_cylinders = num_of_cylinders;
 	}
 	// Получение количества цилиндров
 	public int get_num_of_cylinders() {

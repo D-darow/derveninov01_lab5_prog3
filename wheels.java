@@ -10,21 +10,21 @@ public class wheels {
 		width_of_tire = 0;
 	}
 	// Конструктор
-	public wheels(int diametr, int width) {
-		diameter_of_disk = diametr;
-		width_of_tire = width;
+	public wheels(int diametr_of_disk, int width_of_tire) {
+		this.diameter_of_disk = diametr_of_disk;
+		this.width_of_tire = width_of_tire;
 	}
 	// Установка диаметра колеса
-	public void set_diametr_of_disk(int diametr) {
-		diameter_of_disk = diametr;
+	public void set_diametr_of_disk(int diametr_of_disk) {
+		this.diameter_of_disk = diametr_of_disk;
 	}
 	// Получение диаметра колеса
 	public int get_diametr_of_disk() {
 		return diameter_of_disk;
 	}
 	// Установка ширины шины
-	public void set_width_of_tire(int width) {
-		width_of_tire = width;
+	public void set_width_of_tire(int width_of_tire) {
+		this.width_of_tire = width_of_tire;
 	}
 	// Получение ширины шины
 	public int get_width_of_tire() {
