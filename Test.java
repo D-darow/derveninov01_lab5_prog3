@@ -6,9 +6,11 @@ public class Test {
       bus_arr[1] = new bus(2, 0, 30);
       for (int i = 0; i < 2; i++) {
       	bus_arr[i].init_bus();
+      	System.out.print("\n");
       }
       for (int i = 0; i < 2; i++) {
       	bus_arr[i].print_bus();
+      	System.out.print("\n");
       }
    }
 }
