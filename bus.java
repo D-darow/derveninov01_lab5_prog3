@@ -8,6 +8,7 @@ public class bus {
 	private driver bus_driver;
 	private int price; // Цена проезда (Руб)
 	private int sum; // Сумма заработанных денег
+	private static int total_sum; // Общая сумма зар. денег со всех автобусов
 
 	// Конструктор
 	public bus(int bus_num, int num_of_seats, 
@@ -43,6 +44,9 @@ public class bus {
 			num_of_seats += 1;
 			int seats_left = 32 - num_of_seats;
 			sum += price;
+			total_sum += price;
+			//int tmp = bus::get_total_sum();
+			//bus::set_total_sum(tmp + price);
 			System.out.print("\nПассажир успешно зашел в автобус и оплатил проезд.\nСвободных мест осталось: " + seats_left + "\n\n");
 		}
 		else {
@@ -98,5 +102,13 @@ public class bus {
 		bus_engine.print_engine();
 		bus_wheels.print_wheels();
 		bus_driver.print_driver();
+	}
+	// Получение общей суммы зар. денег
+	public static int get_total_sum() {
+		return total_sum;
+	}
+	// Установка общей суммы зар. денег
+	public static void set_total_sum(int total) {
+		total_sum = total;
 	}
 };

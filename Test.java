@@ -1,16 +1,10 @@
 public class Test {
 
    public static void main(String args[]){
-      bus[] bus_arr = new bus[2];
-      bus_arr[0] = new bus(1, 0, 25);
-      bus_arr[1] = new bus(2, 0, 30);
-      for (int i = 0; i < 2; i++) {
-      	bus_arr[i].init_bus();
-      	System.out.print("\n");
-      }
-      for (int i = 0; i < 2; i++) {
-      	bus_arr[i].print_bus();
-      	System.out.print("\n");
-      }
+    	bus my_bus1 = new bus(1, 0, 25);
+		bus my_bus2 = new bus(2, 0, 20);
+		my_bus1.add_passenger();
+		my_bus2.add_passenger();
+		System.out.print("Общая сумма заработанных денег = " + bus.get_total_sum());
    }
 }
