@@ -69,7 +69,7 @@ public class bus {
 			System.out.print("\nПассажир успешно зашел в автобус и оплатил проезд.\nСвободных мест осталось: " + seats_left + "\n\n");
 		}
 		else {
-			System.out.print("\nПассажир не смог занять место. Автобус переолнен.\n\n");
+			//System.out.print("\nПассажир не смог занять место. Автобус переолнен.\n\n");
 			return -1;
 	}
 	return 0;
@@ -82,7 +82,7 @@ public class bus {
 			System.out.print("\nПассажир успешно покинул автобус.\nСвободных мест осталось: " + seats_left + "\n\n");
 		}
 		else {
-			System.out.print("\nОшибка. Автобус пуст.\n\n");
+			//System.out.print("\nОшибка. Автобус пуст.\n\n");
 			return -1;
 		}
 		return 0;
