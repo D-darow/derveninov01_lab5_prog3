@@ -1,21 +1,18 @@
 public class Test {
 
    public static void main(String args[]){
-   		bus[][] bus_array = new bus[2][2];
-   		int bus_num = 1;
-   		for (int i = 0; i < 2; i++) {
-   			for (int j = 0; j < 2; j++) {
-   				bus_array[i][j] = new bus(bus_num);
-   				bus_num++;
-   			}
-   		}
-   		bus_array[0][0].set_price(25);
-		bus_array[0][0].add_passenger();
-		for (int i = 0; i < 2; i++) {
-			for (int j = 0; j < 2; j++) {
-				bus_array[i][j].print_bus();
-				System.out.print("\n");
-			}
-		}
+   		foreign_driver new_driver = new foreign_driver("Кто", "То", "967565678", 4325);
+   		foreign_driver clone_driver = new foreign_driver("", "", "", 0);
+   		// Глубокое клонирование
+   		try {
+            clone_driver = new_driver.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        // Вывод копии
+   		System.out.print(clone_driver + "\n");
+   		Circle my_circle = new Circle(2.345);
+   		my_circle.print();
+   		System.out.print("\nПлощадь круга = " + my_circle.getSquare());
     }
 }
