@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class driver {
-	private String name; // Имя
-	private String surname; // Фамилия
-	private String phone_number; // Номер телефона
+	protected String name; // Имя
+	protected String surname; // Фамилия
+	protected String phone_number; // Номер телефона
 
 	// Конструктор по умолчанию
 	public driver() {
